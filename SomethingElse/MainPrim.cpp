@@ -3,11 +3,27 @@
 
 using namespace std;
 Person person;
-
 int main()
 {
     const float TAX = 0.1f;
-    personMaker();
+    cout << "Please provide name:\n";
+    cin >> person.name;
+
+    cout << "\nLast initial:\n";
+    cin >> person.initial;
+
+    cout << "\nAge:\n";
+    cin >> person.age;
+    person.isAdult = (person.age >= 18);
+
+    cout << "\nPostal code:\n";
+    cin >> person.zipcode;
+
+    cout << "\nHourly wage:\n";
+    cin >> person.wage;
+
+    cout << "\nDays of work (max 7):\n";
+    cin >> person.daysWorked;
 
     float totalHours = 0;
     for (int i = 0; i < person.daysWorked; i++)
@@ -31,26 +47,4 @@ int main()
     cout << "Gross: $" << grossIncome << "\n";
     cout << "Tax: $" << taxAmount << "\n";
     cout << "Net Income: $" << netIncome << "\n";
-}
-
-void personMaker()
-{
-    cout << "Please provide name:\n";
-    cin >> person.name;
-
-    cout << "\nLast initial:\n";
-    cin >> person.initial;
-
-    cout << "\nAge:\n";
-    cin >> person.age;
-    person.isAdult << (person.age >= 18);
-
-    cout << "\nPostal code:\n";
-    cin >> person.zipcode;
-
-    cout << "\nHourly wage:\n";
-    cin >> person.wage;
-
-    cout << "\nDays of work (max 7):\n";
-    cin >> person.daysWorked;
 }

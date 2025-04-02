@@ -22,7 +22,7 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{25285c6e-2e77-4920-9732-21cdb5c2f3ec}</ProjectGuid>
-    <RootNamespace>SomethingElse</RootNamespace>
+    <RootNamespace>PayrollData</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>PrimitiveData</ProjectName>
   </PropertyGroup>
